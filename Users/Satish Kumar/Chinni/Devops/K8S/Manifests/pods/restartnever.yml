@@ -1,0 +1,13 @@
+---
+    apiversion: v1
+    kind: pod
+    metadata:
+      name: restartnever
+    spec:
+      restartPolicy: never
+      containers:
+        - name: alpine1
+          image: alpine
+          args:
+            - sleep
+            - 3s   
