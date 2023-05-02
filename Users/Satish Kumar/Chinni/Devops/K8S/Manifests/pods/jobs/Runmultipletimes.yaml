@@ -1,0 +1,21 @@
+---
+apiversion: batch/v1
+kind: CronJob
+metadata:
+  name: Periodicjob
+spec:
+  schedule: '*****'
+  jobTemplate:
+    metadata: 
+      name: getlivedata
+    spec:
+      template:
+        metadata:
+          name: livedata
+        spec:
+          containers:
+            - image: alpine
+              name: alpine
+              command:
+                - sleep
+                - 3s

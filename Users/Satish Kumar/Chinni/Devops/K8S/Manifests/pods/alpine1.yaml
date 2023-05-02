@@ -1,0 +1,11 @@
+apiversion: v1
+kind: Pod
+metadata: 
+  name: Alpinepod 
+spec:
+  containers:
+    - name: apline
+      image: alpine
+      args:
+        - sleep
+        - 10s
