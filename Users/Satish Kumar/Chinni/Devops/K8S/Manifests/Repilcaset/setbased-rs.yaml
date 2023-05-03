@@ -12,18 +12,18 @@ spec:
   selector:
     matchExpressions:
       - key: app
-          operator: In
-          values:
+        operator: In
+        values:
             - nginx
             - web
       - key: env
-          operator: NotIn
-          values: 
+        operator: NotIn
+        values: 
             - prod
             - uat
       - key: failing
-          operator: DoesNotExist
-          values:
+        operator: DoesNotExist
+        values:
   template:
     metadata:
       name: nginx
