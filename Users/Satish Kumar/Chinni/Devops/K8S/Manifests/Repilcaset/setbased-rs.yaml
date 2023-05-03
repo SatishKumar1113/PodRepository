@@ -1,7 +1,7 @@
 ---
 apiVersion: apps/v1
 kind: ReplicaSet
-metadate: 
+metadata: 
   name: setbased
   labels:
     purpose: understanding
